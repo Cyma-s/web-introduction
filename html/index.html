@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+​
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/button_script.js">
+
+    </script>
+    <title>자기소개</title>
+</head>
+​
+<body>
+    <div class="container">
+        <div id="introduction">
+            <h1>자기소개</h2>
+                <p>이름 : 베로</p>
+                <p>안녕하세요 :) 베로입니다. 만나서 반가워요! 커피챗 언제나 환영입니다 😄</p>
+        </div>
+        <div>
+            <h1>인생 영화 BEST5</h1>
+            <table class="table table-stripe">
+                <thead>
+                    <tr>
+                        <th>순위</th>
+                        <th>제목</th>
+                        <th>포스터</th>
+                        <th>줄거리</th>
+                        <th>바로가기</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="movie_info">
+                        <td>1</td>
+                        <td>리미트리스</td>
+                        <td>
+                            <img class="poster_img" src="../images/limitless.jpeg" alt="리미트리스 영화 포스터">
+                        </td>
+                        <td>나도 45분만에 미션을 완료할 수 있다면(?)</td>
+                        <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=76452">바로가기</a></td>
+                    </tr>
+                    <tr class="movie_info">
+                        <td>2</td>
+                        <td>에브리씽 에브리웨어 올앳원스</td>
+                        <td>
+                            <img class="poster_img" src="../images/everything.png" alt="에에올 영화 포스터">
+                        </td>
+                        <td>당신의 작은 선택이 이후 인생을 결정한다! 눈알단이 되시겠습니까?</td>
+                        <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=219402">바로가기</a></td>
+                    </tr>
+                    <tr class="movie_info">
+                        <td>3</td>
+                        <td>A.I.</td>
+                        <td>
+                            <img class="poster_img" src="../images/ai.jpeg" alt="A.I. 영화 포스터">
+                        </td>
+                        <td>사람 같은 생각을 하는 로봇은 정말 로봇일까?</td>
+                        <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=31268">바로가기</a></td>
+                    </tr>
+                    <tr class="movie_info">
+                        <td>4</td>
+                        <td>아바타</td>
+                        <td>
+                            <img class="poster_img" src="../images/avatar.jpeg" alt="아바타 영화 포스터">
+                        </td>
+                        <td>판도라의 멋진 풍경과 인간에 대적하는 나비족</td>
+                        <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=62266">바로가기</a></td>
+                    </tr>
+                    <tr class="movie_info">
+                        <td>5</td>
+                        <td>너의 이름은</td>
+                        <td>
+                            <img class="poster_img" src="../images/your_name.jpeg" alt=" 영화 포스터">
+                        </td>
+                        <td>그때는 말하지 못했던, 당신의 이름은?</td>
+                        <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=150198">바로가기</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <form action="">
+                    <h1>방명록</h1>
+                    <div>이름 : <input id="visitor" type="text" name="name"></div>
+                    <div>본인 취향 영화</div>
+                    <div>
+                        <li class="movie_like">리미트리스 <input class="movie" type="checkbox" name="movie" value="리미트리스"></li>
+                        <li class="movie_like">에브리씽 에브리웨어 올앳원스 <input class="movie" type="checkbox" name="movie" value="에브리씽 에브리웨어 올앳원스"></li>
+                        <li class="movie_like">A.I. <input class="movie" type="checkbox" name="movie" value="AI"></li>
+                        <li class="movie_like">아바타 <input class="movie" type="checkbox" name="movie" value="아바타"></li>
+                        <li class="movie_like">너의 이름은 <input class="movie" type="checkbox" name="movie" value="너의 이름은"></li>
+                    </div>
+                    <button class="btn btn-primary" type="reset">취소</button>
+                    <button class="btn btn-primary" onclick="likeMovie()" type="button">등록</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+​
+</html>
+​
