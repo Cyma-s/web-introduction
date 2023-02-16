@@ -5,10 +5,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script type="text/javascript" src="../js/button_script.js">
-
-    </script>
+    <link rel="stylesheet" href="../css/index.css">
     <title>자기소개</title>
 </head>
 ​
@@ -72,7 +69,7 @@
                         <td>5</td>
                         <td>너의 이름은</td>
                         <td>
-                            <img class="poster_img" src="../images/your_name.jpeg" alt=" 영화 포스터">
+                            <img class="poster_img" src="../images/your_name.jpeg" alt="너의이름은 영화 포스터">
                         </td>
                         <td>그때는 말하지 못했던, 당신의 이름은?</td>
                         <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=150198">바로가기</a></td>
@@ -85,11 +82,11 @@
                     <div>이름 : <input id="visitor" type="text" name="name"></div>
                     <div>본인 취향 영화</div>
                     <div>
-                        <li class="movie_like">리미트리스 <input class="movie" type="checkbox" name="movie" value="리미트리스"></li>
-                        <li class="movie_like">에브리씽 에브리웨어 올앳원스 <input class="movie" type="checkbox" name="movie" value="에브리씽 에브리웨어 올앳원스"></li>
-                        <li class="movie_like">A.I. <input class="movie" type="checkbox" name="movie" value="AI"></li>
-                        <li class="movie_like">아바타 <input class="movie" type="checkbox" name="movie" value="아바타"></li>
-                        <li class="movie_like">너의 이름은 <input class="movie" type="checkbox" name="movie" value="너의 이름은"></li>
+                        <li class="movie_like">리미트리스 <input class="movie" type="checkbox" name="movie" value=" 리미트리스"></li>
+                        <li class="movie_like">에브리씽 에브리웨어 올앳원스 <input class="movie" type="checkbox" name="movie" value=" 에브리씽 에브리웨어 올앳원스"></li>
+                        <li class="movie_like">A.I. <input class="movie" type="checkbox" name="movie" value=" AI"></li>
+                        <li class="movie_like">아바타 <input class="movie" type="checkbox" name="movie" value=" 아바타"></li>
+                        <li class="movie_like">너의 이름은 <input class="movie" type="checkbox" name="movie" value=" 너의 이름은"></li>
                     </div>
                     <button class="btn btn-primary" type="reset">취소</button>
                     <button class="btn btn-primary" onclick="likeMovie()" type="button">등록</button>
@@ -100,4 +97,21 @@
 </body>
 ​
 </html>
+
+<script type="text/javascript">
+
+    function likeMovie() {
 ​
+        let name = document.getElementById("visitor").value;
+        let movies = document.querySelectorAll(".movie");
+        let count = 0;
+​
+        movies.forEach(element => {
+            if (element.checked) {
+                count++;
+            }
+        });
+​
+        alert(name + "님, 저와 " + count + "개의 취향이 같으시네요!");
+    }
+</script>
